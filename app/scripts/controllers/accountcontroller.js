@@ -8,10 +8,10 @@
  * Controller of the portalWebApp
  */
 angular.module('portalWebApp')
-  .controller('AccountController', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+    .controller('AccountController', function($scope ,$location) {
+
+    	$scope.createAccount = function () {
+            $location.path("/register");
+        }
+
+    });

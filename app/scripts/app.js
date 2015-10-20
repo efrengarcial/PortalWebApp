@@ -24,6 +24,9 @@ angular
                 templateUrl: 'views/login.html',
                 controller: 'AccountController'
             })
+            .when("/register", {
+                templateUrl: "views/register.html"
+            })
             .otherwise({
                 redirectTo: '/'
             });
