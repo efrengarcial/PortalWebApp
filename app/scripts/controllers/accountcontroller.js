@@ -12,6 +12,6 @@ angular.module('portalWebApp')
 
     	$scope.createAccount = function () {
             $location.path("/register");
-        }
+        };
 
     });

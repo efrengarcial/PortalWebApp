@@ -11,7 +11,10 @@
 angular
     .module('portalWebApp', [
         'ngRoute',
-        'ngSanitize'
+        'ngSanitize',
+        'ngMessages',
+        'ui.bootstrap',
+        'ui.grid'
     ])
     .config(function($routeProvider) {
         $routeProvider
@@ -25,7 +28,11 @@ angular
                 controller: 'AccountController'
             })
             .when("/register", {
-                templateUrl: "views/register.html"
+                templateUrl: 'views/register.html'
+            })
+            .when("/reporteTrazabilidad", {
+                templateUrl: 'views/reporteTrazabilidad.html',
+                controller: 'ReporteTrazabilidadController'
             })
             .otherwise({
                 redirectTo: '/'
