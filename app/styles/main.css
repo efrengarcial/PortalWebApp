@@ -86,3 +86,16 @@ body {
   width: 100%;
   height: 250px;
 }
+/*Estilos CSS Andres*/
+.navbar-default{background: #1a60a7;}
+.navbar-brand{    background: url(../images/logo-ble.png) no-repeat center center; text-indent: -9999px; background-size: contain; margin: 6px 17px 0 0;}  
+.navbar-default .navbar-nav > li > a{color: #fff;padding: 21px 12px;}
+.navbar-default .navbar-nav > li > a:hover,.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:hover{background: #0c4988;color: #fff;}
+.jumbotron{background: url(../images/foto01.jpg) no-repeat;color: #fff;}
+.jumbotron h1{text-shadow: 2px 3px 2px #666;-moz-text-shadow: 2px 3px 2px #666;-webkit-text-shadow: 2px 3px 2px #666;-o-text-shadow: 2px 3px 2px #666;-ms-text-shadow: 2px 3px 2px #666;}
+.btn-success{background-color: #9b2525; border-color: #9b2525; }
+.btn-success:hover {background-color: #1a60a7; border-color: #1a60a7; }
+h1.header{color: #1a60a7;margin: 0;border: none;}
+div.header{background: url(../images/banner003.jpg) no-repeat;padding: 0 0 75px 0;background-size: cover;}
+button[type="submit"],a.btn-success{background-color: #1a60a7;border-color: #1a60a7;margin: 13px 0;}
+.modal-dialog{margin: 0 auto;}
