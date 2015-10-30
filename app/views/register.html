@@ -1,30 +1,44 @@
-<div class="container" style="margin-top:30px"> 
+<div class="container-fluid" style="margin-top:15px">
     <div class="col-md-12">
-        <div class="modal-dialog" style="margin-bottom:0">
+        <div class="modal-dialog" style="margin-bottom:15px">
             <div class="modal-content">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Registration Form</h3>
+                    <h3 class="panel-title text-center">Registration Form</h3>
                 </div>
                 <div class="panel-body">
                     <form role="form">
                         <fieldset>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Cédula/Nit" name="Numero de Identificación" type="number" ng-model="registerID" autofocus="">
+                            <div class="col-md-12 form-group required-field-block">
+                                <label class="col-md-4 control-label">Cédula / Nit</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" placeholder="Cédula/Nit" name="Numero de Identificación" type="text" ng-model="registerID" ng-maxlength="12" ng-required="true" numbers-only np-pattern="/^[0-9]{1,12}$/" autofocus="">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" ng-model="registerEmail" autofocus="">
+                            <div class="col-md-12 form-group required-field-block">
+                                <label class="col-md-4 control-label">E-mail</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" placeholder="E-mail" name="email" type="email" ng-model="registerEmail" ng-minlength="3" ng-maxlength="40" autofocus="" required>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" ng-model="registerPassword" value="">
+                            <div class="col-md-12 form-group required-field-block">
+                                <label class="col-md-4 control-label">Password</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" placeholder="Password" name="password" type="password" ng-model="registerPassword" value="">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input class="form-control" placeholder="Confirm Password" name="confirmPassword" type="password" ng-model="registerPassword2" value="">
+                            <div class="col-md-12 form-group required-field-block">
+                                <label class="col-md-4 control-label">Confirm Password</label>
+                                <div class="col-md-8">
+                                    <input class="form-control" placeholder="Confirm Password" name="confirmPassword" type="password" ng-model="registerPassword2" value="">
+                                </div>
                             </div>
                             <div class="alert alert-warning" ng-show="hasRegistrationError">
                                 <a href="#" class="alert-link" ng-bind="registrationErrorDescription">
                                 </a>
                             </div>
-                            <a href="" ng-click="register()" class="btn btn-sm btn-success">Create account</a>
+                            <div class="col-md-12 text-center">
+                                <a href="" ng-click="register()" class="btn btn-sm btn-success">Create account</a>
+                            </div>
                         </fieldset>
                     </form>
                 </div>
