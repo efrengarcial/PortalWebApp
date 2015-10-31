@@ -28,7 +28,8 @@ angular
                 controller: 'AccountController'
             })
             .when("/register", {
-                templateUrl: 'views/register.html'
+                templateUrl: 'views/register.html',
+                controller: 'RegisterController'
             })
             .when("/reporteTrazabilidad", {
                 templateUrl: 'views/reporteTrazabilidad.html',

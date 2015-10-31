@@ -99,3 +99,14 @@ h1.header{color: #1a60a7;margin: 0;border: none;}
 div.header{background: url(../images/banner003.jpg) no-repeat;padding: 0 0 75px 0;background-size: cover;}
 button[type="submit"],a.btn-success{background-color: #1a60a7;border-color: #1a60a7;margin: 13px 0;}
 .modal-dialog{margin: 0 auto;}
+
+/*Styles by Darío*/
+.header_text{
+  font-size: 22px;
+  color: #1A60A7;
+}
+.label_text{
+  font-size: 16px;
+  color: #1A60A7;
+  font-weight: bold;
+}

@@ -33,7 +33,7 @@ angular.module('portalWebApp')
 
         $scope.clearForm = function() {
             $log.debug("clearForm");
-            $scope.reporte = reporte = {
+            $scope.reporte = {
                 StartDate: new Date().getTime(),
                 EndDate: new Date().getTime(),
             };
@@ -45,8 +45,6 @@ angular.module('portalWebApp')
         $scope.interacted = function(field) {
             return $scope.submitted || field.$dirty;
         };
-
-
 
         $scope.gridOptions = {
             columnDefs: [{
@@ -61,5 +59,4 @@ angular.module('portalWebApp')
                 cellTemplate: '<button id="editBtn" type="button" class="btn-small" ng-click="edit(row.entity)" >Edit</button> '
             }]
         };
-
-    })
+    });
